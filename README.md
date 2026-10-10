@@ -37,6 +37,12 @@
 專家：那你就在臉書上附上一張你正在報名的照片，然後說「這是為了紀念你以前的勇氣」。
 ```
 
+### 實際執行畫面
+
+執行 `python infer_lora_chat.py` 與模型多輪對話的截圖：
+
+![實際對話截圖](images/demo_chat.png)
+
 ## 基礎模型
 
 - [Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
