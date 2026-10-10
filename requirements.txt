@@ -1,0 +1,33 @@
+# 本機環境（Windows + NVIDIA GPU，已在 Python 3.11.9 / RTX 3080 驗證）。
+#
+# 安裝方式（請照順序）：
+#   python -m venv .venv
+#   .venv\Scripts\Activate.ps1
+#   pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+#   pip install -r requirements.txt
+#
+# torch 要先用上面的指令從 PyTorch 官方 CUDA 來源安裝；
+# 直接 pip install torch 在 Windows 通常會裝到 CPU 版，無法使用 GPU。
+
+# PyTorch：已於上方安裝（2.11.0+cu128），這裡不重複列出，避免被覆蓋成 CPU 版。
+
+# Hugging Face 模型與 Trainer。
+transformers==5.17.0
+
+# Supervised fine-tuning trainer。
+trl==1.13.0
+
+# LoRA / PEFT adapter。
+peft==0.21.0
+
+# 4-bit 量化（QLoRA 需要）。
+bitsandbytes==0.50.2
+
+# 資料集讀取。
+datasets==5.0.1
+
+# Trainer 的 GPU 執行支援。
+accelerate==1.15.0
+
+# Loss 曲線繪圖。
+matplotlib==3.11.2

@@ -4,3 +4,10 @@ __pycache__/
 checkpoint-*/
 wandb/
 .ipynb_checkpoints/
+
+# 本專案額外忽略
+logs/
+data/sft/
+outputs/qwen25_05b_lora/
+outputs/*/checkpoint-*/
+outputs/*/training_args.bin
